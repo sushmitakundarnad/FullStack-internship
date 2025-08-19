@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nykaa Landing Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff0f5;
+    }
+    /* Header */
+    header {
+        background-color: #ff3e6c;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    header input {
+        padding: 6px;
+        width: 300px;
+        border: none;
+        border-radius: 4px;
+    }
+    /* Navigation */
+    nav {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: #ff3e6c;
+    }
+    /* Banner */
+    .banner {
+        position: relative;
+        background: url('https://via.placeholder.com/1200x400/ffc0cb/000000?text=Nykaa+Beauty+Sale') no-repeat center/cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .banner h2 {
+        background: rgba(0,0,0,0.6);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    /* Product Section */
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .product {
+        background: white;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    .product:hover {
+        transform: scale(1.05);
+    }
+    .product img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .product h3 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+    }
+    .product p {
+        color: #ff3e6c;
+        font-weight: bold;
+        margin: 0;
+    }
+    /* Categories */
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .category {
+        background: white;
+        width: 250px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .category img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    .category h4 {
+        padding: 10px;
+        margin: 0;
+    }
+    /* Footer */
+    footer {
+        background: #ff3e6c;
+        color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer-section {
+        margin: 10px;
+    }
+    .footer-section h4 {
+        margin-bottom: 10px;
+    }
+    .footer-section a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        border-top: 1px solid #fff;
+        padding-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Nykaa</h1>
+    <input type="text" placeholder="Search for beauty products">
+</header>
+
+<nav>
+    <a href="#">Makeup</a>
+    <a href="#">Skin</a>
+    <a href="#">Hair</a>
+    <a href="#">Fragrance</a>
+    <a href="#">Offers</a>
+</nav>
+
+<div class="banner">
+    <h2>Big Beauty Sale - Up to 50% Off!</h2>
+</div>
+
+<section class="products">
+    <div class="product">
+        <img src="https://images.ctfassets.net/wlke2cbybljx/6Z75K7EQh8g4FfDz4TrtyZ/db8c19ba086ca39a187640400ba323b3/LIPSTICKS_X10_Square_RGB.jpg" alt="lipsticks" width="200" height="300">
+        <h3>Matte Lipstick</h3>
+        <p>₹499</p>
+    </div>
+    <div class="product">
+        <img src="https://vasustore.com/cdn/shop/products/3_69f07ef4-a8f0-4983-8384-f7636197e324.jpg?v=1672744474.jpg" alt="Face Cream" width="200" height="300">
+        <h3>Hydrating Face Cream</h3>
+        <p>₹899</p>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1593487568720-92097fb460fb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcmZ1bWV8ZW58MHx8MHx8fDA%3D.jpg" alt="Perfume" width="200" height="300">
+        <h3>Luxury Perfume</h3>
+        <p>₹1,299</p>
+    </div>
+    <div class="product">
+        <img src="https://theskinstory.in/cdn/shop/files/1_101b2734-5b84-4ccd-97c3-ea15e483f1f0.jpg?v=1754984452.jpg" alt="Shampoo" width="200" height="300">
+        <h3>Herbal Shampoo</h3>
+        <p>₹399</p>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="category">
+        <img src="https://t4.ftcdn.net/jpg/02/73/55/33/360_F_273553300_sBBxIPpLSn5iC5vC8FwzFh6BJDKvUeaC.jpg" alt="Makeup" width="200" height="300">
+        <h4>Makeup</h4>
+    </div>
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2tpbiUyMGNhcmUlMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D.jpeg" alt="Skincare" width="200" height="300">
+        <h4>Skincare</h4>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8C3x3lp0pyDC8Erqm83cQ3QLCt6BTocQLw&s.jpeg" alt="Haircare" width="200" height="300">
+        <h4>Haircare</h4>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="footer-section">
+            <h4>Help</h4>
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation</a>
+        </div>
+        <div class="footer-section">
+            <h4>Social</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2025 Nykaa Demo — All rights reserved
+    </div>
+</footer>
+
+</body>
+</html>
